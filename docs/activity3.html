@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+ <title>Biodata Form</title>
+ <style>
+ body {
+ font-family: Arial, sans-serif;
+ width: 1280px;
+ height: 1280px;
+ margin: 0;
+ padding: 0;
+ }
+ .container {
+ width: 100%;
+ margin: 20px auto;
+ border: 1px solid #000;
+ padding: 20px;
+ box-shadow: 0 0 10px rgba(0,0,0,0.1);
+ position: relative;
+ }
+ h1 {
+ text-align: center;
+ margin-bottom: 20px;
+ }
+ .image-box {
+ width: 200px;
+ height: 200px;
+ border: 1px solid #000;
+ position: absolute;
+ top: 10px;
+ right: 20px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: #f9f9f9;
+ }
+ .image-box label {
+ text-align: center;
+ font-size: 12px;
+ }
+ .section {
+ margin-bottom: 20px;
+ margin-top: 150px;
+ }
+ .section h2 {
+ background-color: #000;
+ color: #fff;
+ padding: 5px;
+ margin: 0;
+ font-size: 16px;
+ }
+ table {
+ border: 2px solid black;
+ border-collapse: collapse;
+ width: 100%;
+ margin-top: 10px;
+ }
+ td {
+ padding: 8px;
+ vertical-align: top;
+ }
+ td label {
+ display: inline-block;
+ width: 150px;
+ }
+ input[type="text"], input[type="date"], input[type="number"], input[type="email"] {
+ width: calc(100% - 160px);
+ padding: 5px;
+ border: 1px solid #ccc;
+ border-radius: 3px;
+ }
+ input[type="submit"] {
+ background-color: #000;
+ color: #fff;
+ padding: 10px 20px;
+ border: none;
+ border-radius: 3px;
+ cursor: pointer;
+ }
+ </style>
+ </head>
+ <body>
+ 
+ <div class="container">
+ <h1>BIO-DATA</h1>
+ 
+ <!-- Image Box for Uploading Photo -->
+ <div class="image-box">
+ <label for="photo-upload">Upload Photo</label>
+ <input type="file" id="photo-upload" accept="image/*" style="position: absolute; opacity: 0; width: 100%; height: 100%;">
+ </div>
+ 
+ <div class="section">
+ <h2>PERSONAL DATA</h2>
+ <table>
+ <tr>
+ <td><label>Position Desired:</label><input type="text"></td>
+ <td><label>Date:</label><input type="date"></td>
+ </tr>
+ <tr>
+ <td><label>Name:</label><input type="text"></td>
+ <td><label>Gender:</label><input type="text"></td>
+ </tr>
+ <tr>
+ <td><label>City Address:</label><input type="text"></td>
+ <td><label>Provincial Address:</label><input type="text"></td>
+ </tr>
+ <tr>
+ <td><label>Telephone:</label><input type="text"></td>
+ <td><label>Cellphone:</label><input type="text"></td>
+ </tr>
+ <tr>
+ <td><label>Email Address:</label><input type="email"></td>
+ <td><label>Birth of Place:</label><input type="text"></td>
+ </tr>
+ </table>
+ </div>
+ 
+ <div class="section">
+ <h2>EDUCATIONAL BACKGROUND</h2>
+ <table>
+ <tr>
+ <td><label>Elementary:</label><input type="text"></td>
+ <td><label>Year Graduated:</label><input type="number"></td>
+ </tr>
+ <tr>
+ <td><label>High School:</label><input type="text"></td>
+ <td><label>Year Graduated:</label><input type="number"></td>
+ </tr>
+ <tr>
+ <td><label>College:</label><input type="text"></td>
+ <td><label>Year Graduated:</label><input type="number"></td>
+ </tr>
+ <tr>
+ <td><label>Degree Received:</label><input type="text"></td>
+ <td><label>Special Skills:</label><input type="text"></td>
+ </tr>
+ </table>
+ </div>
+ 
+ <div class="section">
+ <h2>EMPLOYMENT RECORD</h2>
+ <table>
+ <tr>
+ <td><label>Company Name:</label><input type="text"></td>
+ <td><label>Position:</label><input type="text"></td>
+ <td><label>From:</label><input type="date"></td>
+ <td><label>To:</label><input type="date"></td>
+ </tr>
+ </table>
+ </div>
+ 
+ <div class="section">
+ <h2>CHARACTER REFERENCE</h2>
+ <table>
+ <tr>
+ <td><label>Name:</label><input type="text"></td>
+ <td><label>Position:</label><input type="text"></td>
+ <td><label>Company:</label><input type="text"></td>
+ <td><label>Contact No.:</label><input type="text"></td>
+ </tr>
+ <tr>
+ <td><label>Name:</label><input type="text"></td>
+ <td><label>Position:</label><input type="text"></td>
+ <td><label>Company:</label><input type="text"></td>
+ <td><label>Contact No.:</label><input type="text"></td>
+ </tr>
+ </table>
+ </div>
+ 
+ <div class="section">
+ <table>
+ <tr>
+ <td><label>Res. Cert. No.:</label><input type="text"></td>
+ <td><label>Issued at:</label><input type="text"></td>
+ <td><label>Issued on:</label><input type="date"></td>
+ </tr>
+ <tr>
+ <td><label>SSS:</label><input type="text"></td>
+ <td><label>TIN:</label><input type="text"></td>
+ <td><label>NBI No.:</label><input type="text"></td>
+ </tr>
+ <tr>
+ <td><label>Passport No.:</label><input type="text"></td>
+ </tr>
+ </table>
+ </div>
+ 
+ <div style="text-align: center; margin-top: 20px;">
+ <p>I hereby certify that the above information is true and correct to the best of my knowledge and belief. I also understand that any misrepresentation will be considered reason for withdrawal of an offer or subsequent dismissal if employed.</p>
+ <br>
+ <label>Applicant's Signature: _______________________</label>
+ </div>
+ 
+ <div style="text-align: center; margin-top: 20px;">
+ <input type="submit" value="Submit">
+ </div>
+ </div>
+ 
+ </body>
+ </html>
